@@ -3,13 +3,13 @@ import Foundation
 //Diagonal Difference
 //https://www.hackerrank.com/challenges/diagonal-difference/problem
 
-func diagonalDifference(_ matrix: [[Int]]) -> Int {
+func diagonalDifference(_ arr: [[Int]]) -> Int {
         var leftSum = 0
         var rightSum = 0
 
-        for i in 0..<matrix.count {
-            leftSum += matrix[i][i]
-            rightSum += matrix[i][matrix.count - i - 1]
+        for i in 0..<arr.count {
+            leftSum += arr[i][i]
+            rightSum += arr[i][arr.count - i - 1]
         }
         let allSum = leftSum - rightSum
     
