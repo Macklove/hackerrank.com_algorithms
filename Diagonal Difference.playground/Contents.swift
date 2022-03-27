@@ -11,9 +11,8 @@ func diagonalDifference(_ arr: [[Int]]) -> Int {
             leftSum += arr[i][i]
             rightSum += arr[i][arr.count - i - 1]
         }
-        let allSum = leftSum - rightSum
-    
-        return allSum
+
+        return abs(leftSum - rightSum)
     }
 
 print(diagonalDifference([[12, 3, 5], [1, 3, 6], [4, 7, 9]]))
